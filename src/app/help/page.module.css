@@ -1,0 +1,17 @@
+.highlight {
+    background: var(--a1);
+    border-radius: var(--br);
+    border: 5px solid var(--a1);
+    color: var(--a2);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.highlight_red {
+    background: var(--a3);
+    border-radius: var(--br);
+    border: 5px solid var(--a3);
+    color: var(--a4);
+    font-weight: bold;
+    white-space: nowrap;
+}

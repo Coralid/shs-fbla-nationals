@@ -27,11 +27,9 @@ export default function RootLayout({
                   </li>
                   <hr/>
                   <li>
-                      <form>
-                          <input type="search" placeholder="Search"/>
-                          <input type="submit"></input>
-                      </form>
+                      <input type="search" placeholder="Search"/>
                   </li>
+                  <hr />
                   <li>
                       <button>
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10,0C4.48,0,0,4.48,0,10s4.48,10,10,10,10-4.48,10-10S15.52,0,10,0ZM13.14,12.1l-3.14-3.14-3.14,3.14-1.41-1.41,4.56-4.56,4.56,4.56-1.41,1.41Z"/></svg>
@@ -73,7 +71,6 @@ export default function RootLayout({
                       </ul>
                   </li>
                   <li>
-
                       <Link href="/help">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                               <path
