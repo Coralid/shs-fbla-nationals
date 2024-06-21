@@ -72,10 +72,21 @@ export default function RootLayout({
                           </li>
                       </ul>
                   </li>
+                  <li>
+
+                      <Link href="/help">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                              <path
+                                  d="M10,0C4.48,0,0,4.48,0,10s4.48,10,10,10,10-4.48,10-10S15.52,0,10,0ZM10,4c.78,0,1.41.63,1.41,1.41s-.63,1.41-1.41,1.41-1.41-.63-1.41-1.41.63-1.41,1.41-1.41ZM12.12,17c-2.29,0-3.12-1.86-3.12-3.12v-3.24h-1.12v-2h3.12v5.24c0,.41.17,1.12,1.12,1.12v2Z"/>
+                          </svg>
+                          Help
+                      </Link>
+                  </li>
               </ul>
           </nav>
-          <div id="content"></div>
-          {children}
+          <div id="content">
+              {children}
+          </div>
       </body>
     </html>
   );
