@@ -42,11 +42,10 @@ body {
 
 body {
   margin: 0;
-  display: flex;
   line-height: 2em;
 }
 
-a {
+nav a {
   color: inherit;
   text-decoration: none;
 }
@@ -60,11 +59,11 @@ a {
 nav {
   height: 100vh;
   background: var(--a1);
-  display: inline-flex;
+  display: inline-block;
   padding: 0.5em 1em;
-  max-width: 30vw;
-  min-width: 20vw;
+  width: 25vw;
   color: var(--a2);
+  vertical-align: top;
 }
 nav ul {
   width: 100%;
@@ -78,42 +77,61 @@ nav li {
   display: block;
 }
 
-a, nav button, input {
+nav a, nav button, input {
   transition: all 200ms ease-in-out;
   border-radius: var(--br);
   display: block;
   text-align: left;
+  background: none;
+  font-size: 1em;
 }
 
-a:hover, button:hover, input:not(:focus):hover {
+nav a:hover, button:hover, input:not(:focus):hover {
   background: var(--hl) !important;
 }
 
-nav li svg {
+.svg-wrap {
+  position: absolute;
+  pointer-events: none;
+  transform: translate(0, -2.5em);
+  transition: fill 200ms ease-in-out;
+}
+
+a svg, button svg, .svg-wrap svg {
   height: 1em;
   vertical-align: -0.125em;
   fill: currentColor;
   margin-right: 0.75em;
 }
 
-a.active, :focus {
+nav a.active, nav :focus {
   background: var(--a2) !important;
   color: var(--p1) !important;
 }
 
+nav input:focus + .svg-wrap {
+  color: var(--p1) !important;
+}
+
 nav li > :not(hr) {
-  padding: 0.25em 1em;
+  padding: 0.25em 0.75em;
 }
 
 input[type="search"] {
   background: none;
   border: none;
-  color: var(--p2) !important;
+  color: var(--a2) !important;
   outline: none !important;
   font-size: 1em;
   font-weight: inherit;
-  width: 100%;
   line-height: inherit;
+  display: inline-block;
+  width: 100%;
+  padding-left: 2.5em;
+}
+
+input[type="search"]:focus {
+  color: var(--p2) !important;
 }
 
 input[type="search"]:focus::placeholder {
@@ -133,6 +151,7 @@ nav button {
   font-weight: bold;
   display: block;
   line-height: inherit;
+  width: 100%;
 }
 
 hr {
@@ -141,8 +160,26 @@ hr {
 }
 
 #content {
-  max-height: 100vh;
+  height: 100vh;
+  background: var(--bg);
   display: inline-block;
   padding: 2em 4em;
   overflow: auto;
+  width: 75vw;
+}
+
+button, a {
+  background: none;
+  color: var(--a1);
+  font-size: 0.75em;
+  padding: 0.5em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: var(--br);
+  border: none;
+  transition: background 200ms ease-in-out;
+}
+
+button:hover, a:hover {
+  background: var(--a2);
 }

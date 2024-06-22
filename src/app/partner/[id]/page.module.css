@@ -1,0 +1,9 @@
+.title {
+    display: inline;
+    font-weight: bold;
+    margin: 30%;
+}
+
+.description {
+    padding: 1em;
+}
