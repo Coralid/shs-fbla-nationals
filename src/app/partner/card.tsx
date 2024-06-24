@@ -13,11 +13,11 @@ export default async function PartnerCard({partner}: {partner: Partner}) {
                 <Link href={"/partner/" + partner.id}>
                     {partner.name}
                 </Link>
+                <div className={styles.tag}>
+                    {partner.category}
+                </div>
             </h2>
             <ul>
-                <li>
-                    {partner.category}
-                </li>
                 <li>
                     {partner.address}
                 </li>
