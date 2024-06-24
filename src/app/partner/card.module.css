@@ -3,5 +3,12 @@
     padding: 1em 2em;
     background: var(--fg);
     border-radius: var(--br);
+    list-style: none;
 }
 
+.tag {
+    font-size: 0.75em;
+    font-weight: bold;
+    background: var(--sg);
+    border-raduis: var(--br);
+}
