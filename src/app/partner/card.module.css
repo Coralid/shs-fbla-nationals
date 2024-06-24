@@ -7,8 +7,9 @@
 }
 
 .tag {
-    font-size: 0.75em;
+    font-size: 0.5em;
     font-weight: bold;
     background: var(--sg);
-    border-raduis: var(--br);
+    border-radius: var(--br);
+    padding: 0.25em;
 }
