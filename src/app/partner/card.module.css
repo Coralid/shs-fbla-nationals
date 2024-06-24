@@ -11,5 +11,7 @@
     font-weight: bold;
     background: var(--sg);
     border-radius: var(--br);
-    padding: 0.25em;
+    padding: 0.25em 0.5em;
+    display: inline-block;
+    color: var(--p2);
 }
